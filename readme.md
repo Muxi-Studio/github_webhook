@@ -23,8 +23,7 @@
 	 		["cp", "static/css/*", "../deploy/app/static/css/"],
 	 		["cp", "static/js/*", "../deploy/app/static/js/"],
 	 		["cp", "static/img/*", "../deploy/app/static/img/"],
-	 		["cd ../deploy/", "docker-compose", "build"],
-	 		["cd ../deploy/", "docker-compose", "up", "-d"]
+			["sh", "deploy.sh"]
 	        ]
 	    },
 	 }
