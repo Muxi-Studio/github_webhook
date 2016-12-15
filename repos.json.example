@@ -1,0 +1,15 @@
+{
+   "Muxi-Studio/ccnubox_management_static": {
+       "path": "/root/www/ccnubox_management/ccnubox_management_static/",
+       "key": "ccnubox management",
+       "action": [
+		["git", "pull", "origin", "master"],
+		["cp", "index.html", "../deploy/app/templates/"],
+		["cp", "static/css/*", "../deploy/app/static/css/"],
+		["cp", "static/js/*", "../deploy/app/static/js/"],
+		["cp", "static/img/*", "../deploy/app/static/img/"],
+		["cd ../deploy/", "docker-compose", "build"],
+		["cd ../deploy/", "docker-compose", "up", "-d"]
+       ]
+   },
+}
