@@ -2,6 +2,7 @@ webhook:
     build: .
     env_file:
         - webhook.env
-    command: gunicorn --name webhook -b 0.0.0.0:8050 -w 2 wsgi:app
+    # command: gunicorn --name webhook -b 0.0.0.0:8050 -w 2 wsgi:app
+    command: python index.py 8050
     ports:
         - "8050:8050"

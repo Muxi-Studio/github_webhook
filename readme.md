@@ -6,7 +6,8 @@
 
     $ git clone https://github.com/Muxi-Studio/github_webhook.git
     $ cd github_webhook
-    $ docker-compose build && docker-compose up -d
+~~$ docker-compose build && docker-compose up -d~~ # 先不用docker, 想个办法把容器~webhook~github关联起来, 方便管理
+    $ python index.py 8050&
 
 ## config webhook
 
