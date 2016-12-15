@@ -11,10 +11,6 @@
 ## config webhook
 
     $ cp repos.json.example repos.json
-    $ vim webhook.env
-
-         REPOS_JSON_PATH=/path/to/repos.json
-
     $ vim repos.json (example configuration)
 
 	 {
